@@ -1,0 +1,32 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Jorge",
+    "email":"palpitosfc@gmail.com",
+    "age": 24,
+    "gender": "masculino"
+}
+
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/encontrarID HTTP/1.1
+
+###
+PUT  http://localhost:9000/api/users/encontrarID HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Jorge",
+    "email":"palpitosfc@gmail.com",
+    "age": 22,
+    "gender": "masculino" //aca actualiazo lo que en teoria quiero modificar
+}
+
+###
+
+DELETE   http://localhost:9000/api/users/ponerIDquequieroborrar HTTP/1.1
